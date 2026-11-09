@@ -70,14 +70,16 @@ print(f"computer choose:\n {s_p_s[computer_input]}")
 
 #how many conditions can be possible
 if user_input <= 2 and user_input >=0:
-    if user_input < computer_input:
+    if user_input == 0 and computer_input== 2:
+                    print("You won")
+    elif user_input == 2 and computer_input == 0:
+         print("You lose")
+    elif user_input < computer_input:
         print("You lose")
-    elif user_input == 0 and computer_input== 2:
-                print("You won")
+    
     elif user_input > computer_input:
             print("You won")
-    elif user_input == 2 and computer_input == 0:
-                print("You lose")
+    
     else:
            print("Try again, match draw!")
 else:
